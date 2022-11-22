@@ -1,0 +1,14 @@
+1、3D视觉
+2、白色杯子的深度识别
+
+题目：用于操作的透明对象的 3D 形状估计
+选自Google AI Blog，作者：Shreeyak Sajjan
+链接：
+article： https://zhuanlan.zhihu.com/p/111536900
+              https://ai.googleblog.com/2020/02/learning-to-see-transparent-objects.html
+
+
+主要实现：cleargrasp 机器学习算法
+官网：https://sites.google.com/view/cleargrasp
+ 
+代码 和论文在附件
