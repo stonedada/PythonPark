@@ -5,11 +5,11 @@ import os
 import cv2 as cv2
 import numpy as np
 import tifffile
-# from libtiff import TIFF
+
 imagesDirectory = r"D:\Data\backups\test_npz"  # tiff图片所在文件夹路径
 distDirectory = os.path.dirname(imagesDirectory)  #
 
-distDirectory = os.path.join(distDirectory, "PngImages")  # 要存放bmp格式的文件夹路径
+distDirectory = os.path.join(distDirectory, "PngImages")  # 要存放png格式的文件夹路径
 os.makedirs(distDirectory,exist_ok=True)
 print(distDirectory)
 
@@ -18,7 +18,6 @@ for imageName in os.listdir(imagesDirectory):
     imagePath = os.path.join(imagesDirectory, imageName)
     print("imagePath", imagePath)
     image_16bit = cv2.imread(imagePath,-1)
-    # img2 = TIFF.open(imagePath, mode='r').read_image()
     img2 = tifffile.imread(imagePath)
     try:
         image_16bit.shape
